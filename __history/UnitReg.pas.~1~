@@ -1,0 +1,24 @@
+unit UnitReg;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TFormReg = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormReg: TFormReg;
+
+implementation
+
+{$R *.dfm}
+
+end.

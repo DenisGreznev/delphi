@@ -1,0 +1,51 @@
+unit UnitBD;
+
+interface
+
+uses
+  SysUtils, Classes, DB, ADODB;
+
+type
+  TDataBD = class(TDataModule)
+    ADOSistema: TADOConnection;
+    ADOZakazchiki: TADOTable;
+    ADOUslugi: TADOTable;
+    ADOZakaz: TADOTable;
+    DataZakazchiki: TDataSource;
+    DataUslugi: TDataSource;
+    DataZakaz: TDataSource;
+    ADOZakazchikiid_zakazchiki: TAutoIncField;
+    ADOZakazchikiname: TStringField;
+    ADOZakazchikifam: TStringField;
+    ADOZakazchikiotch: TStringField;
+    ADOZakazchikidatar: TWideStringField;
+    ADOZakazchikiklass: TFloatField;
+    ADOUslugiid_uslugi: TAutoIncField;
+    ADOUsluginazvanie: TStringField;
+    ADOUslugikolchas: TFloatField;
+    ADOUslugikolzan: TFloatField;
+    ADOUslugicenachas: TFloatField;
+    ADOUslugicenames: TFloatField;
+    ADOUslugicenaall: TFloatField;
+    ADOQueryZakaz: TADOQuery;
+    DataQueryZakaz: TDataSource;
+    ADOZakazchikiid_zakaz: TIntegerField;
+    ADOZakazid_zakaz: TAutoIncField;
+    ADOZakazchikiid_uslugi: TIntegerField;
+    ADOQueryZakazname: TStringField;
+    ADOQueryZakaznazvanie: TStringField;
+    ADOZakazid_uslugi: TIntegerField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataBD: TDataBD;
+
+implementation
+
+{$R *.dfm}
+
+end.

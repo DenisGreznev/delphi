@@ -1,0 +1,37 @@
+unit UnitZakaz;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, DBCtrls, StdCtrls, Grids, DBGrids;
+
+type
+  TFormZakaz = class(TForm)
+    DBGrid1: TDBGrid;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    DBNavigator1: TDBNavigator;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormZakaz: TFormZakaz;
+
+implementation
+
+uses UnitBD;
+
+{$R *.dfm}
+
+procedure TFormZakaz.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree
+end;
+
+end.

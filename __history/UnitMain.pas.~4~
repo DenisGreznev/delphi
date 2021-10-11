@@ -1,0 +1,46 @@
+unit UnitMain;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Menus;
+
+type
+  TFormMain = class(TForm)
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    N4: TMenuItem;
+    N5: TMenuItem;
+    N6: TMenuItem;
+    N7: TMenuItem;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure N7Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormMain: TFormMain;
+
+implementation
+
+uses UnitZakazchiki, UnitBD;
+
+{$R *.dfm}
+
+procedure TFormMain.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree
+end;
+
+procedure TFormMain.N7Click(Sender: TObject);
+begin
+Application.CreateForm(TFormZakazchiki, FormZakazchiki);
+end;
+
+end.

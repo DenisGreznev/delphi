@@ -1,0 +1,46 @@
+unit UnitZakazchiki;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, DBCtrls, Grids, DBGrids, StdCtrls;
+
+type
+  TFormZakazchiki = class(TForm)
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormZakazchiki: TFormZakazchiki;
+
+implementation
+
+uses UnitBD;
+
+{$R *.dfm}
+
+procedure TFormZakazchiki.Button2Click(Sender: TObject);
+begin
+If DataBD.ADOKlient.Eof Then Abort;
+  If messagebox(0,'Вы действительно хотите удалить запись?','Запрос',33)=1
+    then  DataBD.ADOKlient.delete;
+
+end;
+
+procedure TFormZakazchiki.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree
+end;
+
+end.

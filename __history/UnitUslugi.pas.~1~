@@ -1,0 +1,24 @@
+unit UnitUslugi;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TFormUslugi = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormUslugi: TFormUslugi;
+
+implementation
+
+{$R *.dfm}
+
+end.

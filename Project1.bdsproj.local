@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021.01.31 12:13:27.656.pas,C:\Users\dengr\Documents\Borland Studio Projects\Unit1.pas=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitMain.pas</Transaction>
+    <Transaction>2021.01.31 12:13:27.656.dfm,C:\Users\dengr\Documents\Borland Studio Projects\Unit1.dfm=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitMain.dfm</Transaction>
+    <Transaction>2021.01.31 12:13:31.352.bdsproj,C:\Users\dengr\Documents\Borland Studio Projects\Project1.bdsproj=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Project1.bdsproj</Transaction>
+    <Transaction>2021.01.31 12:18:47.538.pas,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.pas=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitBD.pas</Transaction>
+    <Transaction>2021.01.31 12:18:47.538.dfm,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.dfm=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitBD.dfm</Transaction>
+    <Transaction>2021.01.31 12:39:51.736.pas,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.pas=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitZakazchiki.pas</Transaction>
+    <Transaction>2021.01.31 12:39:51.736.dfm,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.dfm=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitZakazchiki.dfm</Transaction>
+    <Transaction>2021.01.31 12:52:48.820.pas,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.pas=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitUslugi.pas</Transaction>
+    <Transaction>2021.01.31 12:52:48.820.dfm,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.dfm=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitUslugi.dfm</Transaction>
+    <Transaction>2021.01.31 13:09:20.715.pas,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.pas=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitZakaz.pas</Transaction>
+    <Transaction>2021.01.31 13:09:20.715.dfm,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.dfm=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitZakaz.dfm</Transaction>
+    <Transaction>2021.01.31 13:18:43.091.pas,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.pas=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitDbUslugi.pas</Transaction>
+    <Transaction>2021.01.31 13:18:43.091.dfm,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.dfm=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitDbUslugi.dfm</Transaction>
+    <Transaction>2021.02.02 08:33:35.452.pas,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.pas=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitReg.pas</Transaction>
+    <Transaction>2021.02.02 08:33:35.452.dfm,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.dfm=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitReg.dfm</Transaction>
+    <Transaction>2021.02.04 15:05:01.426.pas,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.pas=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitSpravka.pas</Transaction>
+    <Transaction>2021.02.04 15:05:01.426.dfm,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.dfm=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitSpravka.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

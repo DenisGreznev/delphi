@@ -1,0 +1,30 @@
+unit UnitZakazchiki;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TFormZakazchiki = class(TForm)
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormZakazchiki: TFormZakazchiki;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormZakazchiki.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree
+end;
+
+end.

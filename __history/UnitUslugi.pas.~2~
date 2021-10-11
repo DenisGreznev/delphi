@@ -1,0 +1,32 @@
+unit UnitUslugi;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TFormUslugi = class(TForm)
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormUslugi: TFormUslugi;
+
+implementation
+
+uses UnitBD;
+
+{$R *.dfm}
+
+procedure TFormUslugi.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree
+end;
+
+end.
