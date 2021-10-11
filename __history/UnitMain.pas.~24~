@@ -41,15 +41,6 @@ type
     N12: TMenuItem;
     N13: TMenuItem;
     Button1: TButton;
-    GroupBox3: TGroupBox;
-    Label4: TLabel;
-    Label5: TLabel;
-    Edit3: TEdit;
-    Edit4: TEdit;
-    Button3: TButton;
-    Label2: TLabel;
-    Label3: TLabel;
-    CheckBox1: TCheckBox;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure N7Click(Sender: TObject);
     procedure N8Click(Sender: TObject);
@@ -64,10 +55,7 @@ type
     procedure N12Click(Sender: TObject);
     procedure N2Click(Sender: TObject);
     procedure N13Click(Sender: TObject);
-    procedure FormResize(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
-    procedure CheckBox1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -96,24 +84,9 @@ end;
 
 procedure TFormMain.Button1Click(Sender: TObject);
 begin
-GroupBox1.Visible:=false;
-GroupBox3.Visible:=true;
-N3.Visible:=false;
-N4.Visible:=false;
-N5.Visible:=false;
-N6.Visible:=false;
-N7.Visible:=false;
-N8.Visible:=false;
-N9.Visible:=false;
-N10.Visible:=false;
-N11.Visible:=false;
-N12.Visible:=false;
-N13.Visible:=false;
-Button1.Visible:=false;
-Edit3.Text:='';
-Edit4.Text:='';
-Label2.Visible:=false;
-Label3.Visible:=false;
+FormMain.Visible:=false;
+FormLogin.Visible:=true;
+
 end;
 
 procedure TFormMain.Button20Click(Sender: TObject);
@@ -127,88 +100,14 @@ begin
 Application.CreateForm(TFormUslugi, FormUslugi);
 end;
 
-procedure TFormMain.Button3Click(Sender: TObject);
-begin
-if (Edit3.Text='admin') and (Edit4.Text='admin') then begin
-  GroupBox3.Visible:=false;
-  GroupBox1.Visible:=true;
-  Button1.Visible:=true;
-  N3.Visible:=true;
-  N4.Visible:=true;
-  N5.Visible:=true;
-  N6.Visible:=true;
-  N7.Visible:=true;
-  N8.Visible:=true;
-  N9.Visible:=true;
-  N10.Visible:=true;
-  N11.Visible:=true;
-  N12.Visible:=true;
-  N13.Visible:=true;
-  Label2.Visible:=true;
-  Label3.Visible:=true;
-  Label3.Caption:='Администратор';
-end;
-
-if (Edit3.Text='user') and (Edit4.Text='user') then begin
-  GroupBox3.Visible:=false;
-  GroupBox1.Visible:=true;
-  Button1.Visible:=true;
-  N3.Visible:=true;
-  N4.Visible:=true;
-  N5.Visible:=true;
-  N6.Visible:=true;
-  N7.Visible:=true;
-  N8.Visible:=true;
-  N9.Visible:=true;
-  N10.Visible:=true;
-  N11.Visible:=true;
-  N12.Visible:=true;
-  N13.Visible:=true;
-  Label2.Visible:=true;
-  Label3.Visible:=true;
-  Label3.Caption:='Пользователь';
-end;
-
-if (Edit3.Text='') and (Edit4.Text='') then
-ShowMessage('Пустые значения');
-
-
-end;
-
 procedure TFormMain.Button9Click(Sender: TObject);
 begin
 frxreport4.ShowReport; 
 end;
 
-procedure TFormMain.CheckBox1Click(Sender: TObject);
-begin
-if (CheckBox1.Checked=true) then Edit4.PasswordChar:=#0
-else Edit4.PasswordChar:=#42;
-end;
-
 procedure TFormMain.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 Action:=caFree
-end;
-
-procedure TFormMain.FormResize(Sender: TObject);
-begin
-GroupBox1.Visible:=false;
-Button1.Visible:=false;
-Label2.Visible:=false;
-Label3.Visible:=false;
-N3.Visible:=false;
-N4.Visible:=false;
-N5.Visible:=false;
-N6.Visible:=false;
-N7.Visible:=false;
-N8.Visible:=false;
-N9.Visible:=false;
-N10.Visible:=false;
-N11.Visible:=false;
-N12.Visible:=false;
-N13.Visible:=false;
-Edit4.PasswordChar:=#42;
 end;
 
 procedure TFormMain.N10Click(Sender: TObject);

@@ -13,36 +13,10 @@ object FormMain: TFormMain
   FormStyle = fsMDIForm
   Menu = MainMenu1
   OldCreateOrder = False
-  Position = poDesktopCenter
   OnClose = FormClose
   OnResize = FormResize
   PixelsPerInch = 96
   TextHeight = 13
-  object Label2: TLabel
-    Left = 530
-    Top = 8
-    Width = 103
-    Height = 16
-    Caption = #1042#1099' '#1074#1086#1096#1083#1080' '#1082#1072#1082': '
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object Label3: TLabel
-    Left = 639
-    Top = 8
-    Width = 4
-    Height = 16
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlue
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
   object GroupBox1: TGroupBox
     Left = 96
     Top = 56
@@ -166,7 +140,6 @@ object FormMain: TFormMain
     Height = 41
     Caption = #1042#1099#1081#1090#1080
     TabOrder = 1
-    OnClick = Button1Click
   end
   object GroupBox3: TGroupBox
     Left = 223
@@ -176,7 +149,7 @@ object FormMain: TFormMain
     TabOrder = 2
     object Label4: TLabel
       Left = 145
-      Top = 37
+      Top = 53
       Width = 46
       Height = 18
       Caption = #1051#1086#1075#1080#1085
@@ -189,7 +162,7 @@ object FormMain: TFormMain
     end
     object Label5: TLabel
       Left = 145
-      Top = 88
+      Top = 104
       Width = 57
       Height = 18
       Caption = #1055#1072#1088#1086#1083#1100
@@ -202,35 +175,26 @@ object FormMain: TFormMain
     end
     object Edit3: TEdit
       Left = 113
-      Top = 61
+      Top = 77
       Width = 121
       Height = 21
       TabOrder = 0
     end
     object Edit4: TEdit
       Left = 113
-      Top = 112
+      Top = 128
       Width = 121
       Height = 21
       TabOrder = 1
     end
     object Button3: TButton
       Left = 127
-      Top = 173
+      Top = 165
       Width = 91
       Height = 33
       Caption = #1042#1093#1086#1076
       TabOrder = 2
       OnClick = Button3Click
-    end
-    object CheckBox1: TCheckBox
-      Left = 98
-      Top = 150
-      Width = 161
-      Height = 17
-      Caption = #1055#1086#1082#1072#1079#1072#1090#1100' / '#1089#1082#1088#1099#1090#1100' '#1087#1072#1088#1086#1083#1100
-      TabOrder = 3
-      OnClick = CheckBox1Click
     end
   end
   object MainMenu1: TMainMenu
