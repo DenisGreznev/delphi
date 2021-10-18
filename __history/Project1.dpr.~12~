@@ -15,7 +15,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.CreateForm(TDataBD, DataBD);
   Application.CreateForm(TFormMain, FormMain);
+  Application.CreateForm(TDataBD, DataBD);
   Application.Run;
 end.

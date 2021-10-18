@@ -13,7 +13,6 @@ object FormMain: TFormMain
   FormStyle = fsMDIForm
   Menu = MainMenu1
   OldCreateOrder = False
-  Position = poDesktopCenter
   OnClose = FormClose
   OnResize = FormResize
   PixelsPerInch = 96
@@ -176,7 +175,7 @@ object FormMain: TFormMain
     TabOrder = 2
     object Label4: TLabel
       Left = 145
-      Top = 37
+      Top = 53
       Width = 46
       Height = 18
       Caption = #1051#1086#1075#1080#1085
@@ -189,7 +188,7 @@ object FormMain: TFormMain
     end
     object Label5: TLabel
       Left = 145
-      Top = 88
+      Top = 104
       Width = 57
       Height = 18
       Caption = #1055#1072#1088#1086#1083#1100
@@ -202,35 +201,26 @@ object FormMain: TFormMain
     end
     object Edit3: TEdit
       Left = 113
-      Top = 61
+      Top = 77
       Width = 121
       Height = 21
       TabOrder = 0
     end
     object Edit4: TEdit
       Left = 113
-      Top = 112
+      Top = 128
       Width = 121
       Height = 21
       TabOrder = 1
     end
     object Button3: TButton
       Left = 127
-      Top = 173
+      Top = 165
       Width = 91
       Height = 33
       Caption = #1042#1093#1086#1076
       TabOrder = 2
       OnClick = Button3Click
-    end
-    object CheckBox1: TCheckBox
-      Left = 98
-      Top = 150
-      Width = 161
-      Height = 17
-      Caption = #1055#1086#1082#1072#1079#1072#1090#1100' / '#1089#1082#1088#1099#1090#1100' '#1087#1072#1088#1086#1083#1100
-      TabOrder = 3
-      OnClick = CheckBox1Click
     end
   end
   object MainMenu1: TMainMenu
