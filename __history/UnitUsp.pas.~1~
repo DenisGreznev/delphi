@@ -1,0 +1,30 @@
+unit UnitUsp;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TFormUsp = class(TForm)
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormUsp: TFormUsp;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormUsp.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree
+end;
+
+end.

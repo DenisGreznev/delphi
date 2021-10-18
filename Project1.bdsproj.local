@@ -22,5 +22,11 @@
     <Transaction>2021.10.11 12:49:38.568.dfm,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\Unit1.dfm=C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitLogin.dfm</Transaction>
     <Transaction>2021.10.11 13:20:47.210.pas,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitLogin.pas=</Transaction>
     <Transaction>2021.10.11 13:20:47.210.dfm,C:\Users\dengr\Desktop\ПРАКТИКА\делфи\UnitLogin.dfm=</Transaction>
+    <Transaction>2021.10.18 15:16:38.574.pas,C:\Users\dengr\Documents\GitHub\delphi\Unit1.pas=C:\Users\dengr\Documents\GitHub\delphi\UnitUsp.pas</Transaction>
+    <Transaction>2021.10.18 15:16:38.575.dfm,C:\Users\dengr\Documents\GitHub\delphi\Unit1.dfm=C:\Users\dengr\Documents\GitHub\delphi\UnitUsp.dfm</Transaction>
+    <Transaction>2021.10.18 15:39:25.204.pas,C:\Users\dengr\Documents\GitHub\delphi\Unit1.pas=C:\Users\dengr\Documents\GitHub\delphi\UnitOcenki.pas</Transaction>
+    <Transaction>2021.10.18 15:39:25.204.dfm,C:\Users\dengr\Documents\GitHub\delphi\Unit1.dfm=C:\Users\dengr\Documents\GitHub\delphi\UnitOcenki.dfm</Transaction>
+    <Transaction>2021.10.18 17:50:25.094.pas,C:\Users\dengr\Documents\GitHub\delphi\Unit1.pas=C:\Users\dengr\Documents\GitHub\delphi\UnitOtchetUspev.pas</Transaction>
+    <Transaction>2021.10.18 17:50:25.094.dfm,C:\Users\dengr\Documents\GitHub\delphi\Unit1.dfm=C:\Users\dengr\Documents\GitHub\delphi\UnitOtchetUspev.dfm</Transaction>
   </Transactions>
 </BorlandProject>

@@ -50,12 +50,19 @@ type
     Label2: TLabel;
     Label3: TLabel;
     CheckBox1: TCheckBox;
+    N14: TMenuItem;
+    N15: TMenuItem;
+    N16: TMenuItem;
+    frxDBDataset4: TfrxDBDataset;
+    frxReport8: TfrxReport;
+    Button14: TButton;
+    Button2: TButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure N7Click(Sender: TObject);
     procedure N8Click(Sender: TObject);
     procedure N9Click(Sender: TObject);
     procedure Button20Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
     procedure Button9Click(Sender: TObject);
     procedure Button10Click(Sender: TObject);
     procedure Button11Click(Sender: TObject);
@@ -68,6 +75,14 @@ type
     procedure Button3Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure CheckBox1Click(Sender: TObject);
+    procedure N14Click(Sender: TObject);
+    procedure Button30Click(Sender: TObject);
+    procedure Button31Click(Sender: TObject);
+    procedure N15Click(Sender: TObject);
+    procedure N16Click(Sender: TObject);
+    procedure Button14Click(Sender: TObject);
+    procedure Button12Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -80,7 +95,7 @@ var
 implementation
 
 uses UnitZakazchiki, UnitBD, UnitUslugi, UnitZakaz, UnitReg, UnitSpravka,
-  UnitLogin;
+  UnitUsp, UnitOcenki, UnitOtchetUspev;
 
 {$R *.dfm}
 
@@ -92,6 +107,17 @@ end;
 procedure TFormMain.Button11Click(Sender: TObject);
 begin
 frxreport7.ShowReport;
+end;
+
+procedure TFormMain.Button12Click(Sender: TObject);
+begin
+Application.CreateForm(TFormZakaz, FormZakaz);
+end;
+
+procedure TFormMain.Button14Click(Sender: TObject);
+begin
+DataBD.ADOUspev.Append;
+Application.CreateForm(TFormOcenki, FormOcenki);
 end;
 
 procedure TFormMain.Button1Click(Sender: TObject);
@@ -124,7 +150,24 @@ end;
 
 procedure TFormMain.Button2Click(Sender: TObject);
 begin
+Application.CreateForm(TFormOtchetUspev, FormOtchetUspev);
+end;
+
+procedure TFormMain.Button8Click(Sender: TObject);
+begin
 Application.CreateForm(TFormUslugi, FormUslugi);
+end;
+
+
+procedure TFormMain.Button30Click(Sender: TObject);
+begin
+Application.CreateForm(TFormUsp, FormUsp);
+end;
+
+procedure TFormMain.Button31Click(Sender: TObject);
+begin
+Application.CreateForm(TFormOcenki, FormOcenki);
+DataBD.ADOUspev.Append;
 end;
 
 procedure TFormMain.Button3Click(Sender: TObject);
@@ -146,6 +189,11 @@ if (Edit3.Text='admin') and (Edit4.Text='admin') then begin
   N13.Visible:=true;
   Label2.Visible:=true;
   Label3.Visible:=true;
+  Button9.Visible:=true;
+  Button10.Visible:=true;
+  Button11.Visible:=true;
+  GroupBox1.Top:=56;
+  GroupBox1.Height:=289;
   Label3.Caption:='Администратор';
 end;
 
@@ -155,7 +203,6 @@ if (Edit3.Text='user') and (Edit4.Text='user') then begin
   Button1.Visible:=true;
   N3.Visible:=true;
   N4.Visible:=true;
-  N5.Visible:=true;
   N6.Visible:=true;
   N7.Visible:=true;
   N8.Visible:=true;
@@ -166,6 +213,12 @@ if (Edit3.Text='user') and (Edit4.Text='user') then begin
   N13.Visible:=true;
   Label2.Visible:=true;
   Label3.Visible:=true;
+  Button9.Visible:=false;
+  Button10.Visible:=false;
+  Button11.Visible:=false;
+  Button2.Visible:=false;
+  GroupBox1.Top:=100;
+  GroupBox1.Height:=220;
   Label3.Caption:='Пользователь';
 end;
 
@@ -229,6 +282,22 @@ end;
 procedure TFormMain.N13Click(Sender: TObject);
 begin
 Application.CreateForm(TFormSpravka, FormSpravka);
+end;
+
+procedure TFormMain.N14Click(Sender: TObject);
+begin
+Application.CreateForm(TFormUsp, FormUsp);
+end;
+
+procedure TFormMain.N15Click(Sender: TObject);
+begin
+DataBD.ADOUspev.Append;
+Application.CreateForm(TFormOcenki, FormOcenki);
+end;
+
+procedure TFormMain.N16Click(Sender: TObject);
+begin
+Application.CreateForm(TFormOtchetUspev, FormOtchetUspev);
 end;
 
 procedure TFormMain.N2Click(Sender: TObject);

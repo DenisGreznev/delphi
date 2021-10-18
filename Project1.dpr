@@ -9,7 +9,10 @@ uses
   UnitZakaz in 'UnitZakaz.pas' {FormZakaz},
   UnitDbUslugi in 'UnitDbUslugi.pas' {FormDbUslugi},
   UnitReg in 'UnitReg.pas' {FormReg},
-  UnitSpravka in 'UnitSpravka.pas' {FormSpravka};
+  UnitSpravka in 'UnitSpravka.pas' {FormSpravka},
+  UnitUsp in 'UnitUsp.pas' {FormUsp},
+  UnitOcenki in 'UnitOcenki.pas' {FormOcenki},
+  UnitOtchetUspev in 'UnitOtchetUspev.pas' {FormOtchetUspev};
 
 {$R *.res}
 

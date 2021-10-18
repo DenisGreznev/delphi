@@ -40,6 +40,38 @@ type
     ADOQueryZakazkolzan: TFloatField;
     ADOQueryZakazcenaall: TFloatField;
     ADOQueryZakazid_zakazchiki: TAutoIncField;
+    ADOUspev: TADOTable;
+    DataUspev: TDataSource;
+    ADOUspevid_usp: TAutoIncField;
+    ADOUspevid_zakazchiki: TIntegerField;
+    ADOUspevid_uslugi: TIntegerField;
+    ADOUspevocenka: TFloatField;
+    ADOUspevnomerzan: TFloatField;
+    ADOUspevdatazan: TWideStringField;
+    ADOQuery1: TADOQuery;
+    DataSource1: TDataSource;
+    ADOQuery1id_zakazchiki: TAutoIncField;
+    ADOQuery1fam: TStringField;
+    ADOQuery1name: TStringField;
+    ADOQuery1otch: TStringField;
+    ADOQuery1datar: TWideStringField;
+    ADOQuery1klass: TFloatField;
+    ADOQuery1nazvanie: TStringField;
+    ADOQuery1kolzan: TFloatField;
+    ADOQuery1cenaall: TFloatField;
+    ADOQueryUsp: TADOQuery;
+    DataSourceUsp: TDataSource;
+    ADOQueryUspid_zakazchiki: TIntegerField;
+    ADOQueryUspid_uslugi: TIntegerField;
+    ADOQueryUspid_usp: TAutoIncField;
+    ADOQueryUspfam: TStringField;
+    ADOQueryUspname: TStringField;
+    ADOQueryUspotch: TStringField;
+    ADOQueryUspnazvanie: TStringField;
+    ADOQueryUspnomerzan: TFloatField;
+    ADOQueryUspocenka: TFloatField;
+    ADOQueryUspdatazan: TWideStringField;
+    ADOQuery1id_uslugi: TAutoIncField;
   private
     { Private declarations }
   public

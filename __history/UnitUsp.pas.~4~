@@ -1,0 +1,39 @@
+unit UnitUsp;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DBCtrls, Grids, DBGrids, StdCtrls, Mask;
+
+type
+  TFormUsp = class(TForm)
+    DBLookupComboBox1: TDBLookupComboBox;
+    Label1: TLabel;
+    DBLookupComboBox2: TDBLookupComboBox;
+    Label2: TLabel;
+    Label3: TLabel;
+    DBEdit1: TDBEdit;
+    DBGrid1: TDBGrid;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormUsp: TFormUsp;
+
+implementation
+
+uses UnitBD, UnitMain;
+
+{$R *.dfm}
+
+procedure TFormUsp.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree
+end;
+
+end.

@@ -37,8 +37,8 @@ object FormSpravka: TFormSpravka
   object Label2: TLabel
     Left = 495
     Top = 294
-    Width = 234
-    Height = 60
+    Width = 230
+    Height = 40
     Caption = #1044#1072#1090#1072' '#1089#1086#1079#1076#1072#1085#1080#1103' '#1087#1088#1080#1083#1086#1078#1077#1085#1080#1103': 04.02.2020'
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
@@ -1331,9 +1331,9 @@ object FormSpravka: TFormSpravka
   object Label4: TLabel
     Left = 495
     Top = 360
-    Width = 122
+    Width = 130
     Height = 40
-    Caption = #1042#1077#1088#1089#1080#1103': 1.0.0'
+    Caption = #1042#1077#1088#1089#1080#1103': 1.1.0'
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16

@@ -55,7 +55,7 @@ object FormZakaz: TFormZakaz
   end
   object DBNavigator1: TDBNavigator
     Left = 224
-    Top = 247
+    Top = 246
     Width = 300
     Height = 25
     DataSource = DataBD.DataQueryZakaz

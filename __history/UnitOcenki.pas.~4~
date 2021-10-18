@@ -1,0 +1,41 @@
+unit UnitOcenki;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Mask, DBCtrls, Grids, DBGrids;
+
+type
+  TFormOcenki = class(TForm)
+    DBGrid1: TDBGrid;
+    DBGrid2: TDBGrid;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure DBGrid2CellClick(Column: TColumn);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormOcenki: TFormOcenki;
+
+implementation
+
+uses UnitBD;
+
+{$R *.dfm}
+
+procedure TFormOcenki.DBGrid2CellClick(Column: TColumn);
+begin
+dataBD.ADOUslugi.Filtered:=true;
+dataBD.ADOUslugi.Filter:='id_zakazchiki='''+DataBD.ADOZakazchiki.Fieldbyname('id_zakazchiki').AsString+'''';
+end;
+
+procedure TFormOcenki.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree
+end;
+
+end.

@@ -1,0 +1,162 @@
+object FormOcenki: TFormOcenki
+  Left = 0
+  Top = 0
+  Caption = #1057#1087#1088#1072#1074#1086#1095#1085#1080#1082' '#1086#1094#1077#1085#1086#1082
+  ClientHeight = 548
+  ClientWidth = 1100
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 24
+    Width = 193
+    Height = 41
+    Caption = #1057#1087#1080#1089#1086#1082' '#1079#1072#1082#1072#1079#1095#1080#1082#1086#1074' '#1042#1099#1073#1077#1088#1080#1090#1077' '#1079#1072#1082#1072#1079#1095#1080#1082#1072
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
+  object Label2: TLabel
+    Left = 360
+    Top = 32
+    Width = 97
+    Height = 17
+    Caption = #1045#1075#1086' '#1079#1072#1082#1072#1079#1099
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
+  object Label3: TLabel
+    Left = 265
+    Top = 208
+    Width = 200
+    Height = 19
+    Caption = #1042#1074#1077#1076#1080#1090#1077' '#1085#1086#1084#1077#1088' '#1079#1072#1085#1103#1090#1080#1103
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 264
+    Top = 272
+    Width = 187
+    Height = 19
+    Caption = #1042#1074#1077#1076#1080#1090#1077' '#1076#1072#1090#1091' '#1079#1072#1085#1103#1090#1080#1103
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 265
+    Top = 336
+    Width = 63
+    Height = 19
+    Caption = #1054#1094#1077#1085#1082#1072
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 32
+    Top = 71
+    Width = 209
+    Height = 425
+    DataSource = DataBD.DataZakazchiki
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+  end
+  object DBGrid2: TDBGrid
+    Left = 264
+    Top = 71
+    Width = 289
+    Height = 106
+    DataSource = DataBD.DataSource1
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object DBEdit1: TDBEdit
+    Left = 264
+    Top = 232
+    Width = 121
+    Height = 21
+    DataField = 'nomerzan'
+    DataSource = DataBD.DataUspev
+    TabOrder = 2
+  end
+  object DBEdit2: TDBEdit
+    Left = 264
+    Top = 297
+    Width = 121
+    Height = 21
+    DataField = 'datazan'
+    DataSource = DataBD.DataUspev
+    TabOrder = 3
+  end
+  object DBEdit3: TDBEdit
+    Left = 265
+    Top = 361
+    Width = 121
+    Height = 21
+    DataField = 'ocenka'
+    DataSource = DataBD.DataUspev
+    TabOrder = 4
+  end
+  object Button1: TButton
+    Left = 280
+    Top = 400
+    Width = 97
+    Height = 41
+    Caption = #1044#1086#1073#1072#1074#1080#1090#1100
+    TabOrder = 5
+    OnClick = Button1Click
+  end
+  object DBGrid3: TDBGrid
+    Left = 600
+    Top = 24
+    Width = 473
+    Height = 472
+    DataSource = DataBD.DataSourceUsp
+    TabOrder = 6
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+end
